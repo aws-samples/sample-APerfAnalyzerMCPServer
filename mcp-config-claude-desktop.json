@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/specification/main/schema/config.json",
+    "mcpServers": {
+        "aperf-analyzer": {
+            "command": "/path/to/aperf-analyzer-mcp/.venv/bin/python",
+            "args": ["-m", "src.server"],
+            "env": {
+                "APERF_DATA_DIR": "/path/to/your/aperf/runs",
+                "APERF_MAX_PROJECTED_UTILIZATION_PCT": "50"
+            }
+        }
+    }
+}
